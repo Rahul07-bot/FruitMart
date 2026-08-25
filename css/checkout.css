@@ -1,0 +1,20 @@
+.mb-4 {
+    text-align: center;
+	font-weight:bold;
+	border-bottom:3px solid green;
+	color:green;
+}
+
+.button:hover{
+	background:#52b152;
+}
+.button{
+	background:green;
+	color:white;
+	font-weight:bold;
+	font-size:20px;
+}
+label.form-label {
+    font-size: 18px;
+	font-weight:bold;
+}

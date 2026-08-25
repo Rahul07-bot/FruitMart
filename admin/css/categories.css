@@ -1,0 +1,8 @@
+table{
+	border:1px solid;
+}
+img.category_img {
+    height: 60px;
+    width:50%;
+	border-radius:12px;
+}
