@@ -106,5 +106,6 @@ body{
 }
 .about-image img{
 	margin:0;
+	height:auto;
 }
 }

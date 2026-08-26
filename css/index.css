@@ -193,19 +193,17 @@ a.index_category_name {
 
 
 @media (max-width: 900px) {
+.main_index {
+    height: auto;
+    margin-top: 20px;
+}
 
-    /* Hero section */
-    .main_index {
-        height: auto;
-        margin-top: 20px;
-    }
-
-    .index_content {
-        float: none;
-        width: 100%;
-        height: auto;
-        text-align: center;
-    }
+.index_content {
+    float: none;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
 
     .index_content img {
         width: 80%;
@@ -214,9 +212,9 @@ a.index_category_name {
         margin: 0 auto;
     }
 
-    .index_content ul {
-        padding: 0;
-        margin: 20px 0;
+.index_content ul {
+     padding: 0;
+     margin: 20px 0;
     }
 
     .index_content ul li {
