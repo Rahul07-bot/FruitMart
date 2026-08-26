@@ -47,7 +47,7 @@
           <a class="nav-link text" href="about_us.php">About Us</a>
         </li>  
 		<li class="nav-item">
-          <a class="nav-link text" href="#">Contact Us</a>
+          <a class="nav-link text" href="contact_us.php">Contact Us</a>
         </li>  
 		
 		<?php if(@$_SESSION['user_id'] == ''){ ?>

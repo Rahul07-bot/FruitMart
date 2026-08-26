@@ -62,7 +62,7 @@
             </div>
 
             <div class="about-image">
-                <img src="images/mixfruit.jpg" alt="fruits">
+                <img src="images/index_logo.png" alt="fruits">
             </div>
         </div>
     </div>
