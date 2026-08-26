@@ -1,4 +1,13 @@
-@media (max-width: 576px){
+a.btn.btn-primary.mt-3{
+	height: 7vh;
+    font-size: 20px;
+    font-weight: bold;
+    background: green;
+    color: white;
+	border:none;
+}
 
-
+a.btn.btn-primary.mt-3:hover {
+    background: #52b152;
+    color: white;
 }

@@ -101,27 +101,27 @@
 
                         <div class="mb-3">
                             <label class="form-label">Name</label>
-                            <input type="text" name="name" class="form-control">
+                            <input type="text" name="name" class="form-control" placeholder = "Enter your name">
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">Email</label>
-                            <input type="email" name="email" class="form-control">
+                            <input type="email" name="email" class="form-control" placeholder = "Enter your email">
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">Phone</label>
-                            <input type="text" name="phone" class="form-control">
+                            <input type="text" name="phone" class="form-control" placeholder = "Enter your number">
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">Password</label>
-                            <input type="password" name="password" class="form-control">
+                            <input type="password" name="password" class="form-control" placeholder = "Enter passowrd">
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">Confirm Password</label>
-                            <input type="password" name="confirm_password" class="form-control">
+                            <input type="password" name="confirm_password" class="form-control"  placeholder = "Enter confirm password">
                         </div>
 
                         <button type="submit" name="register" class="btn button w-100">
@@ -153,3 +153,5 @@
 </script>
 </body>
 </html>
+
+<?php require('footer.php'); ?>

@@ -53,10 +53,15 @@ span.user_name {
 	background:green;
 	margin:0;
 	border-bottom:1px solid;
+	border-radius:6px;
 }
 
 ul.name_dropdown li {
     margin: 0;
+}
+
+.name_dropdown a{
+	text-decoration:none;
 }
 
 .user_name:hover .name_dropdown {

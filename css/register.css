@@ -63,12 +63,22 @@ label.form-label {
 }
 
 
-@media (max-width: 567px){
+@media (max-width: 900px){
 input.form-control {
-    height: 12vh;
+    height: 7vh;
 }
 button.btn.button.w-100 {
-    height: 12vh;
+    height: 6vh !important;
+        font-size: 15px;
+        font-weight: bold;
+        background: green;
+}
+.text-center h1{
+		font-size:30px;
+		font-weight:bold;
+}
+label.form-label {
+    font-size: 17px;
 }
 .register_content {
     font-size: 16px;

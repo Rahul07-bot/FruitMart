@@ -60,17 +60,17 @@ label.form-label {
 
 
 
-@media (max-width: 576px) {
+@media (max-width: 900px) {
 	.login_form {
 		padding:0;
 	}
 	
-	.button {
-    /* height: 8vh; */
-    font-size: 15px;
-    font-weight: bold;
-    background: green;
-}
+.button {
+        height: 6vh !important;
+        font-size: 15px;
+        font-weight: bold;
+        background: green;
+    }
 .register_content {
     font-size: 14px;
 }
@@ -78,10 +78,20 @@ label.form-label {
     text-align: center;
     margin-top: -4px;
 }
+
+.text-center h1{
+	font-weight:bold;
+	font-size:30px;
+}
 .or {
     text-align: center;
     font-weight: bold;
     margin-top: 2px;
 }
-
+input.form-control {
+    height: 7vh;
+}
+label.form-label {
+    font-size: 17px;
+}
 }
