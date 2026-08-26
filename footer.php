@@ -17,8 +17,8 @@
 			    <h1 class = "main_content">Quick Links</h1>
 				<h6><a href = "index.php"><i class="fa fa-home" style = "color:red;font-size:20px;"></i>&nbsp;&nbsp;Home</a></h6>
 				<h6><span style='font-size:20px;' class = "apple">&#127822;</span>&nbsp;<a href = "fruits.php">Fruits</a></h6>
-				<h6><i class="fa fa-user" style="color:red;font-size:20px;"></i>&nbsp;&nbsp;<a href = "#">About Us</a></h6>
-				<h6><i class="fa fa-phone" style="font-size:20px;color:red;"></i>&nbsp;&nbsp;<a href = "#">Contact Us</a></h6>
+				<h6><i class="fa fa-user" style="color:red;font-size:20px;"></i>&nbsp;&nbsp;<a href = "about_us.php">About Us</a></h6>
+				<h6><i class="fa fa-phone" style="font-size:20px;color:red;"></i>&nbsp;&nbsp;<a href = "contact_us.php">Contact Us</a></h6>
 			 </li>
 		     <li>
 			    <h1 class = "main_content">Contact Us</h1>

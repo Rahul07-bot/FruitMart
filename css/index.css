@@ -192,112 +192,143 @@ a.index_category_name {
 
 
 
-@media (max-width: 576px) {
+@media (max-width: 900px) {
 
-.main_index {
-	height:38vh;
-}
-
-.index_content ul li {
-    margin:0;
-}
-
-.index_content ul li:nth-child(1) {
-    font-size: 10px;
-}
-
-.index_content ul li:nth-child(2) {
-    font-size: 18px;
-    width: 100%;
-    line-height: 1;
-}
-
-.index_content ul li:nth-child(3) {
-    font-size: 7px;
-    width: 100%;
-}
-
-.index_content img {
-    height: 127px;
-    margin-left: -7vh;
-    margin-top: -1vh;
-}
-
-.index_content ul li button {
-    width: 51%;
-    height: 22px;
-    margin: 4px 0px 0px -5px;
-    font-size: 8px;
-}
-
-.index_content ul li:nth-child(5) {
-    color: #968686;
-    margin-top: 10px;
-    font-size: 4px;
-}
-
-.index_content {
-    height: 38vh;
-}
-
-.index_fruit {
-        /* border: 1px solid; */
-        margin-top: 5vh;
-        height: 7vh;
+    /* Hero section */
+    .main_index {
+        height: auto;
+        margin-top: 20px;
     }
 
-span.index_fruit_category {
-    font-size: 15px;
-    border-bottom: 1px solid #4DBD18;
-}
+    .index_content {
+        float: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
 
-.index_category {
-    grid-template-columns: repeat(2, 1fr);
-}
+    .index_content img {
+        width: 80%;
+        max-width: 350px;
+        height: auto;
+        margin: 0 auto;
+    }
 
-.index_category_image {
-    height: 22vh;
-}
+    .index_content ul {
+        padding: 0;
+        margin: 20px 0;
+    }
 
-.index_category_box {
-    padding: 0;
-}
-p.index_category_name {
-    font-size: 12px;
-}
+    .index_content ul li {
+        margin: 10px 0 !important;
+        list-style: none;
+    }
+
+    .index_content ul li:nth-child(1) {
+        font-size: 20px;
+    }
+
+    .index_content ul li:nth-child(2) {
+        font-size: 36px;
+        line-height: 1.1;
+        width: 100%;
+    }
+
+    .index_content ul li:nth-child(3) {
+        font-size: 14px;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .index_content ul li button {
+        width: 120px;
+        height: 35px;
+        margin: 10px auto;
+    }
+
+    .index_content ul li:nth-child(5) {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+
+    /* Categories */
+    .index_fruit {
+        margin-top: 40px;
+        height: auto;
+    }
+
+    .index_fruit_category {
+        font-size: 24px;
+    }
+
+    .index_category {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .index_category_box {
+        padding: 10px;
+    }
+
+    .index_category_image {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+    }
+
+    .index_category_name {
+        font-size: 14px;
+    }
+
+
+    /* Banner */
+    .index_banner2 {
+        height: auto;
+        min-height: 300px;
+        margin-top: 50px;
+        background-position: center;
+    }
+
+    .index_banner_div {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
     .index_banner_div ul {
         margin: 0;
-        margin-top: 6vh;
-        margin-left: -6vh;
+        padding: 30px 20px;
     }
-.index_banner_div ul li:nth-child(1) {
-    font-size: 10px;
-}
-.index_banner_div ul li:nth-child(2) {
-    font-size: 23px;
-    line-height: 1;
-}
 
-.index_banner_div ul li:nth-child(3) {
-    font-size: 8px;
-}
+    .index_banner_div ul li:nth-child(1) {
+        font-size: 20px;
+    }
 
-.index_banner_div ul li button {
-    /* width: 21%; */
-    border-radius: 8px;
-    height: 22px;
-    margin-top: 5px;
-    font-size: 11px;
-    margin-left: -1vh;
-	width:70%;
-}
+    .index_banner_div ul li:nth-child(2) {
+        font-size: 36px;
+        line-height: 1.1;
+        width: 100%;
+    }
 
-.index_banner_div_image {
-        height: 29vh;
-        margin-top: 6vh;
-}
-.index_banner2 {
-    height: 50vh;
-}
+    .index_banner_div ul li:nth-child(3) {
+        font-size: 14px;
+        width: 100%;
+    }
 
+    .index_banner_div ul li button {
+        width: 120px;
+        height: 35px;
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+    .index_banner_div_image {
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
 }
