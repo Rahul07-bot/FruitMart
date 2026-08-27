@@ -51,10 +51,7 @@
                     </p>
 
 
-                    <a
-                        href="index.php"
-                        class="btn btn-primary mt-3"
-                    >
+                    <a 	href="index.php" class="btn btn-primary mt-3">
                         Continue Shopping
                     </a>
 
@@ -148,7 +145,7 @@
         My Cart
     </h2>
 
-<div class = "cart_table">
+<div class = "cart_tables">
     <table class="table table-bordered">
 
         <thead>

@@ -44,6 +44,7 @@ span.user_name {
 	margin:0;
 	margin-left:0vh;
 	list-style:none;
+	z-index:111;
 	display:none;
 }
 .name_dropdown li{

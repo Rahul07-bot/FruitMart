@@ -11,3 +11,15 @@ a.btn.btn-primary.mt-3:hover {
     background: #52b152;
     color: white;
 }
+
+
+ 
+
+
+
+
+@media (max-width: 900px) {
+	a.btn.btn-primary.mt-3 {
+    height: 5vh;
+}
+}
