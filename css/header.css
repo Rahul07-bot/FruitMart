@@ -63,6 +63,7 @@ ul.name_dropdown li {
 
 .name_dropdown a{
 	text-decoration:none;
+	color:white;
 }
 
 .user_name:hover .name_dropdown {
