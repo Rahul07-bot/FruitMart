@@ -281,7 +281,7 @@
 	
 	<div class="text-end mt-3">
 
-    <a href="checkout.php" class="btn btn-success">
+    <a href="checkout.php" class="btn cart_btn">
         Proceed to Checkout
     </a>
 

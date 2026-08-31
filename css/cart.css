@@ -12,6 +12,23 @@ a.btn.btn-primary.mt-3:hover {
     color: white;
 }
 
+.cart_btn{
+	background:#4DBD18;
+	border:none;
+	font-weight:bold;
+	color:white;
+}
+
+.cart_btn:hover{
+	background:#69be69;
+	color:white;
+}
+
+.cart_btn:active{
+	background:#69be69!important;
+	color:white!important;
+}
+
 
  
 

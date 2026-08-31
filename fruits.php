@@ -39,6 +39,8 @@
     <title>Fruits - FruitMart</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+	
+	<link rel = "stylesheet" href = "css/fruits.css" type = "text/css">
 
 </head>
 
@@ -71,7 +73,7 @@
                             ₹<?php echo $row['price']; ?>
                         </p>
 
-                        <a href="fruit_details.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">
+                        <a href="fruit_details.php?id=<?php echo $row['id']; ?>" class="btn  fruit_button">
                             View Details
                         </a>
 

@@ -62,10 +62,9 @@
 
     <title><?php echo $row['fruit_name']; ?> - FruitMart</title>
 
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+	
+	<link rel = "stylesheet" href = "css/fruit_details.css" type = "text/css">
 
 </head>
 
@@ -107,7 +106,7 @@
 
             <form method = "POST">
 			<input type = "hidden" name = "id" value = "<?php echo $row['id']; ?>">
-			<button type = "submit" name = "add_to_cart" class="btn btn-primary">
+			<button type = "submit" name = "add_to_cart" class="btn fruit_details_btn">
                 Add to Cart
             </button>
 			</form>
