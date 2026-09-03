@@ -184,27 +184,27 @@
 
                             <select name="category_id" class="form-select">
 
-                                <option value="">
-                                    Select Category
-                                </option>
+									<option value="">
+										Select Category
+									</option>
 
-                                <?php 
-								   // fetch category id
-								   $sql = "SELECT * FROM categories";
-								   
-								   $result = $conn->query($sql);
-								   
-								   while($category = $result->fetch_assoc()){
-								?>
-								<option value = "<?php echo $category['id']; ?>"
-								   <?php if($category['id'] == $row['category_id']){
-									   echo "selected";
-								   }
-								   ?>
-								>
-								   <?php echo $category['category_name']; ?>
-								</option>
-								   <?php } ?>
+									<?php 
+									   // fetch category id
+									   $sql = "SELECT * FROM categories";
+									   
+									   $result = $conn->query($sql);
+									   
+									   while($category = $result->fetch_assoc()){
+									?>
+									<option value = "<?php echo $category['id']; ?>"
+									   <?php if($category['id'] == $row['category_id']){
+										   echo "selected";
+									   }
+									   ?>
+									>
+									   <?php echo $category['category_name']; ?>
+									</option>
+									   <?php } ?>
 
                             </select>
 
