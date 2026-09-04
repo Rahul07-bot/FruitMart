@@ -95,6 +95,32 @@
 	   
 	   $payment_method = $_POST['payment_method'];
 	   
+	   //check stock before placing order 
+	   foreach($_SESSION['cart'] as $fruit){
+		   $sql = "SELECT quantity, fruit_name FROM fruits WHERE id = ?";
+		   
+		   $stmt = $conn->prepare($sql);
+		   
+		   $stmt->bind_param("i", $fruit['id']);
+		   
+		   $stmt->execute();
+		   
+		   $result = $stmt->get_result();
+		   
+		   $product = $result->fetch_assoc();
+		   
+		   // compare database quantity with cart quantity
+		   if($fruit['cart_quantity'] > $product['quantity']){
+			   echo "
+			      <script>
+				     alert('Only {$product['quantity']} {$product['fruit_name']} are available.');
+					 window.location.href = 'cart.php';
+				  </script>
+			   ";
+			   exit();
+		   }
+	   }
+	   
 	   // insert order to table
 	   $sql = "INSERT INTO orders (user_id, total_amount, address, phone, payment_method)
 	   VALUES(?, ?, ?, ?, ?)";
@@ -109,6 +135,7 @@
 	   
 	   // take each fruit from cart
 	   foreach($_SESSION['cart'] as $fruit){
+		   // insert item into order_items 
 		   $sql = "INSERT INTO order_items (order_id, fruit_id, quantity, price)
 		   VALUES(?, ?, ?, ?)";
 		   
@@ -117,6 +144,16 @@
 		   $stmt->bind_param("iiid", $order_id, $fruit['id'], $fruit['cart_quantity'], $fruit['price']);
 		   
 		   $stmt->execute();
+		   
+		   // reduce stock quantity
+		   $sql = "UPDATE fruits SET quantity = quantity - ? WHERE id = ? AND quantity >= ?";
+		   
+		   $stmt = $conn->prepare($sql);
+		   
+		   $stmt->bind_param("iii", $fruit['cart_quantity'], $fruit['id'], $fruit['cart_quantity']);
+		   
+		   $stmt->execute();
+		   
 	   }
 	   
 	   // clear cart
